@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* HEADER */
+.header-container {
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul,
+.social-media ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.social-list a {
+    color: #000;
+}
+
+.social-item {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* MAIN */
+.hero-section {
+    flex: 1;
+    background-image: url("./assets/heroimg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    width: 250px;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(to right, #000 0%, #999999 100%);
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.content-section {
+    background-color: #999999;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+.content-block {
+    width: 350px;
+    text-align: center;
+}
+
+/* FEATURES */
+.features-container {
+    background-color: #e0e0d1;
+    padding: 70px;
+}
+
+.features-container h1 {
+    margin-bottom: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features h5 {
+    margin: 30px 0 10px 0;
+}
+
+.features p {
+    font-weight: bold;
+}
+
+.feature {
+    width: 300px;
+}
+
+.feature1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.feature2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.feature-button {
+    height: 35px;
+    width: 150px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
