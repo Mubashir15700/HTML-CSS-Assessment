@@ -22,7 +22,8 @@
 .navbar a {
     text-decoration: none;
     color: #000;
-    font-weight: bold;
+    font-weight: bolder;
+    margin: 0 10px;
 }
 
 .social-list a {
@@ -30,6 +31,7 @@
 }
 
 .social-item {
+    margin: 0 10px;
     border: 1px solid #000;
     border-radius: 50%;
     width: 25px;
@@ -43,6 +45,7 @@
 /* MAIN */
 .hero-section {
     flex: 1;
+    text-align: center;
     background-image: url("./assets/heroimg.jpg");
     background-size: cover;
     background-position: center;
@@ -59,7 +62,6 @@
     background: linear-gradient(to right, #000 0%, #999999 100%);
     padding: 20px;
     color: #fff;
-    border-radius: 5px;
 }
 
 .content-section {
@@ -91,16 +93,17 @@
     justify-content: space-between;
 }
 
-.features h5 {
+.feature {
+    width: 300px;
+}
+
+.feature h5 {
+    font-weight: bold;
     margin: 30px 0 10px 0;
 }
 
-.features p {
-    font-weight: bold;
-}
-
-.feature {
-    width: 300px;
+.feature p {
+    font-weight: 500;
 }
 
 .feature1-content {
@@ -131,4 +134,5 @@
     background-color: #000;
     color: #fff;
     border: none;
+    font-weight: bold;
 }
