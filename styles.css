@@ -67,19 +67,36 @@
 .content-section {
     background-color: #999999;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 70px;
 }
 
 .content-block {
-    width: 350px;
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
     text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .content-block {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-block {
+        flex: 1 1 100%;
+    }
 }
 
 /* FEATURES */
 .features-container {
     background-color: #e0e0d1;
     padding: 70px;
+    box-sizing: border-box;
 }
 
 .features-container h1 {
@@ -90,11 +107,19 @@
 
 .features {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .feature {
-    width: 300px;
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.feature img {
+    height: auto;
+    width: 100%;
 }
 
 .feature h5 {
@@ -106,27 +131,6 @@
     font-weight: 500;
 }
 
-.feature1-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.feature2-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.feature3-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-}
-
 .feature-button {
     height: 35px;
     width: 150px;
@@ -135,4 +139,43 @@
     color: #fff;
     border: none;
     font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .feature {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 993px) {
+    .feature1-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .feature2-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature3-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
 }
