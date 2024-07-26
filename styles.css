@@ -134,6 +134,7 @@
 @media (max-width: 768px) {
     .content-block {
         flex: 1 1 100%;
+        text-align: left;
     }
 }
 
@@ -153,12 +154,12 @@
 .features {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
 }
 
 .feature {
     flex: 1 1 calc(33.33% - 20px);
-    margin: 10px;
     box-sizing: border-box;
 }
 
