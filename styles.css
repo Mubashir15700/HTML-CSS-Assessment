@@ -4,10 +4,9 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* HEADER */
+/* HEADER SECTION */
 .header-container {
-    height: 50px;
-    padding: 10px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,8 +33,16 @@
     margin: 0 10px;
 }
 
+.navbar a:hover {
+    text-decoration: underline;
+}
+
 .social-list a {
     color: #000;
+}
+
+.social-list a:hover {
+    font-size: 20px;
 }
 
 .social-item {
@@ -62,7 +69,7 @@
     }
 }
 
-/* MAIN */
+/* MAIN SECTION */
 .hero-section {
     flex: 1;
     text-align: center;
@@ -76,12 +83,14 @@
 
 .hero-content {
     position: absolute;
-    width: 250px;
+    width: 80%;
+    max-width: 250px;
     bottom: 20px;
     left: 20px;
     background: linear-gradient(to right, #000 0%, #999999 100%);
     padding: 20px;
     color: #fff;
+    box-sizing: border-box;
 }
 
 .content-section {
@@ -105,22 +114,8 @@
         padding: 20px;
     }
 
-    .hero-content {
-        width: 150px;
-    }
-
     .hero-content h3 {
         font-size: 1em;
-    }
-}
-
-@media (max-width: 230px) {
-    .hero-content {
-        width: 100px;
-    }
-
-    .hero-content h3 {
-        font-size: .8em;
     }
 }
 
@@ -138,7 +133,7 @@
     }
 }
 
-/* FEATURES */
+/* FEATURES SECTION */
 .features-container {
     background-color: #e0e0d1;
     padding: 70px;
@@ -179,12 +174,19 @@
 
 .feature-button {
     height: 35px;
-    width: 150px;
+    width: 80%;
+    max-width: 150px;
     margin-top: 30px;
     background-color: #000;
     color: #fff;
     border: none;
     font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.feature-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Media Queries */
@@ -229,17 +231,5 @@
 @media (max-width: 400px) {
     .features-container {
         padding: 20px;
-    }
-}
-
-@media (max-width: 320px) {
-    .feature-button {
-        height: 30px;
-        width: 100px;
-        margin-top: 30px;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        font-weight: bold;
     }
 }
